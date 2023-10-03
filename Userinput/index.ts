@@ -6,7 +6,7 @@ const questions:QuestionCollection = [{
     message: 'What is your age?'
 }]
 
-var answers: Promise<Answers> = inquirer.prompt(questions)
+var answers: Promise<Answers> = inquirer.prompt(questions);
 answers.then((answers: Answers)=>{
 console.log('Answers',answers);
 
